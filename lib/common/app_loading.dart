@@ -8,6 +8,7 @@ class AppLoading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: AppColors.BGCOLOR,
       body: Center(
@@ -25,7 +26,7 @@ class AppLoading extends StatelessWidget {
             ),
             const Spacer(),
             const SizedBox(
-              height: 20,
+              height: height / 20,
               width: 20,
               child: CircularProgressIndicator(),
             ),
